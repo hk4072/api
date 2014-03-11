@@ -1,0 +1,10 @@
+var mongoose = require('mongoose');
+
+module.exports = mongoose.model('User', {
+	name: String,
+	password: String,
+	games_played: Number,
+	cumulative_score: Number,
+	current_room: {type:String, default:""},
+	user_type: {type:String, default:"standard"}
+});

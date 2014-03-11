@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	div(style='border: 1px solid black;')
+		form(name='LoginForm', action='/addUser',method='post')
+			table
+				tr
+					td Username
+					td
+						input(type='text', name='username', placeholder='Username Required')
+				tr
+					td Password
+					td
+						input(type='password', name='password', placeholder='Username Required')
+				tr
+					td Email
+					td
+						input(type='text', name='email', placeholder='Email Required')
+				tr
+					td
+						input(type='submit', value='SignUp')
